@@ -17,7 +17,7 @@ export default function Profile() {
     if (!image) return alert("Please select image");
 
     await axios.put(
-      "http://localhost:5000/auth/update-profile",
+      "https://aerofeed-mern.onrender.com/auth/update-profile",
       { profilePic: image },
       { headers: { Authorization: `Bearer ${token}` } }
     );

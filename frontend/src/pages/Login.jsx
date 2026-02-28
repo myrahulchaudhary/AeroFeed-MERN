@@ -11,7 +11,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://aerofeed-mern.onrender.com/auth/login",
         { email, password }
       );
 

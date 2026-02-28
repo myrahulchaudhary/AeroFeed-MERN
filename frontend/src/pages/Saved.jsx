@@ -12,7 +12,7 @@ export default function Saved() {
   const fetchSaved = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/posts/saved",
+        "https://aerofeed-mern.onrender.com/posts/saved",
         {
           headers: {
             Authorization: `Bearer ${token}`,

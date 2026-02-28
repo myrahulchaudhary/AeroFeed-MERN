@@ -25,8 +25,8 @@ export default function Auth() {
 
     try {
       const url = isLogin
-        ? "http://localhost:5000/auth/login"
-        : "http://localhost:5000/auth/register";
+        ? "https://aerofeed-mern.onrender.com/auth/login"
+        : "https://aerofeed-mern.onrender.com/auth/register";
 
       const res = await axios.post(url, form);
 

@@ -31,7 +31,7 @@ export default function Feed() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/posts");
+      const res = await axios.get("https://aerofeed-mern.onrender.com/posts");
       setPosts(res.data);
     } catch (err) {
       console.log(err);
@@ -43,7 +43,7 @@ export default function Feed() {
 
     try {
       await axios.post(
-        "http://localhost:5000/posts",
+        "https://aerofeed-mern.onrender.com/posts",
         { title, content },
         {
           headers: {
@@ -63,7 +63,7 @@ export default function Feed() {
   const handleLike = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/posts/like/${id}`,
+        `https://aerofeed-mern.onrender.com/posts/like/${id}`,
         {},
         {
           headers: {
@@ -80,7 +80,7 @@ export default function Feed() {
   const handleSave = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/posts/save/${id}`,
+        `https://aerofeed-mern.onrender.com/posts/save/${id}`,
         {},
         {
           headers: {
